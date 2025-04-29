@@ -1,0 +1,21 @@
+# - means comment, ignored by k8s
+
+# yaml files can have extension as .yml or .yaml
+
+# simple key values
+key: value
+name: ravi
+course: devops
+city: hyderabad
+
+# set of key values -> Dictionaries / Maps
+trainer:
+  name: ravi
+  course: devops
+  city: hyderabad
+
+# Multiple items -> Arrays / Lists [aws, azure, devops]
+courses:
+- aws
+- azure
+- devops
