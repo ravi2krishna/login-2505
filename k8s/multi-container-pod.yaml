@@ -13,7 +13,6 @@ spec:
     ports:
     - containerPort: 80
   - name: c3
-    image: ubuntu 
-    command:
-    - sleep
-    - 3600
+    image: ravi2krishna/nodejs-api
+    ports:
+    - containerPort: 8080
