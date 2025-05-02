@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: login
+spec:
+  replicas: 1 # 1 pod should always exist
+  selector:
+    matchLabels:
+      app: login
+  template: # Pod Template
+    metadata:
+      labels:
+        app: login
+    spec:
+      containers:
+      - name: c1
+        image: ravi2krishna/login-2505
+        ports:
+        - containerPort: 80
